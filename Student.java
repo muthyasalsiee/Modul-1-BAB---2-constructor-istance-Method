@@ -23,7 +23,6 @@ public class Student {
         jumlahObjek++;
     }
 
-    // constructor tambahan untuk nilai mapel
     public Student(double m, double e, double s){
         mathGrade = m;
         englishGrade = e;
@@ -59,7 +58,6 @@ public class Student {
         return (mathGrade + englishGrade + scienceGrade) / 3;
     }
 
-    // method menentukan lulus atau remidi
     public boolean statusAkhir(){
         return getAverage() >= 61;
     }
