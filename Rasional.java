@@ -39,35 +39,29 @@ public class Rasional {
     public boolean moreThan(Rasional A){
         return pembilang * A.penyebut > penyebut * A.pembilang;
     }
-
-    // operator <
+  
     public boolean lessThan(Rasional A){
         return pembilang * A.penyebut < penyebut * A.pembilang;
     }
 
-    // operator <=
     public boolean lessEqual(Rasional A){
         return pembilang * A.penyebut <= penyebut * A.pembilang;
     }
 
-    // operator >=
     public boolean greaterEqual(Rasional A){
         return pembilang * A.penyebut >= penyebut * A.pembilang;
     }
 
-    // operator -
     public void minus(Rasional A){
         pembilang = pembilang * A.penyebut - penyebut * A.pembilang;
         penyebut = penyebut * A.penyebut;
     }
 
-    // operator *
     public void kali(Rasional A){
         pembilang = pembilang * A.pembilang;
         penyebut = penyebut * A.penyebut;
     }
 
-    // operator /
     public void bagi(Rasional A){
         pembilang = pembilang * A.penyebut;
         penyebut = penyebut * A.pembilang;
